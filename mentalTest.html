@@ -1,8 +1,8 @@
 <html>
+
 <!--title/header 1-->
 <header>
-    <h1><img src="assets/images/templogo.png" id="tempLogo" style="visibility: visible; height: 30; width: 30;" />
-        College Companion </h1>
+    <h1><img src="assets/images/templogo.png" id="tempLogo" style="visibility: visible; height: 30; width: 30;"/> College Companion </h1>
 </header>
 
 <!-- Nav Bar-->
@@ -19,12 +19,34 @@
     INSERT DESCRIPTION OF WHAT A GAD SCREENING IS
 
     <form>
-    Over the last two weeks, how often have youb een bothered by the following problems?
-        1 <input type="checkbox" name="1" value="1"/>
+        Over the last two weeks, how often have you been bothered by the following problems?
+    <table align="center">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+        <tr>
+            <td><th>Not at all</th></td>
+            <td><th>Several Days</th></td>
+            <td><th>More than half the days</th></td>
+            <td><th>nearly every day</th></td>
+        </tr>
+        
+        <tr>
+            <td>1. Feeling nervous, anxious, or on edge <br></td>
+            <td> <input id="q1_1" type="checkbox" name="1" value="0" /> </td>
+            <td> <input id= "q1_2" type="checkbox" name="1" value="1"/> </td>
+            <td> <input id= "q1_3" type="checkbox" name="1" value="2"/> </td>
+            <td> <input id= "q1_4" type="checkbox" name="1" value="3"/> </td>
+        </tr>
+    </table>
+    
     </form>
 
     <script language="Javascript">
-
+        
+        var q1_1 = document.getElementbyId("q1_1")
     </script>
 
 
