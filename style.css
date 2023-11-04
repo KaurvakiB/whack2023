@@ -1,0 +1,35 @@
+/*HOMEPAGE*/
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    background-color: darkgreen;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* Fixing position of nav bar. Credit to W3 Schools*/
+    position: fixed;
+    top: 0;
+    width: 100%;   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none
+}
+
+li a:hover {
+    background-color: aliceblue;
+    text-decoration: none;
+
+}
+
