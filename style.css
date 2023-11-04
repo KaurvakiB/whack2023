@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*HOMEPAGE*/
 /*Navigation Bar*/
 ul {
@@ -33,3 +34,9 @@ li a:hover {
 
 }
 
+=======
+.navBar {
+    background-color: darkgreen;
+    overflow: hidden;
+}
+>>>>>>> 748c6824b37bea0c6789e63b201436727c8499b4
