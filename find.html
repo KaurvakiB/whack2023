@@ -16,13 +16,14 @@
   </head>
   
 <h2>Find Resources Near You</h2>
-<form action="/url" method="GET">
-    <label>
-        Enter your location in the box below. <br>
-        <input id="location" type="text" name="location" minlength="1" maxlength="90" required>
-    </label>
-    <button type="Go">Go</button>
-    <script language="Javascript">
-        document.getElementById("location").innerHTML = "<h1>Your location</h1>";
-
+<iframe>
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+    &q=Space+Needle,Seattle+WA">
+</iframe>
     </script>
