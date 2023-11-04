@@ -12,6 +12,10 @@
 <form action="/url" method="GET">
     <label>
         Enter your location in the box below. <br>
-        <input type="text" name="location" minlength="3" maxlength="20" required>
+        <input id="location" type="text" name="location" minlength="1" maxlength="90" required>
     </label>
-    <button type="Go">Submit</button>  
+    <button type="Go">Go</button>
+    <script language="Javascript">
+        document.getElementById("location").innerHTML = "<h1>Your location</h1>";
+
+    </script>
