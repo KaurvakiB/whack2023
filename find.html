@@ -9,4 +9,9 @@
     <a href="resources.html">Accessible/Free Resources</a>
 </nav>
 <h2>Find Resources Near You</h2>
-<p>Enter your location in the box below.</p>
+<form action="/url" method="GET">
+    <label>
+        Enter your location in the box below. <br>
+        <input type="text" name="location" minlength="3" maxlength="20" required>
+    </label>
+    <button type="Go">Submit</button>  
