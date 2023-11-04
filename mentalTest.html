@@ -46,10 +46,10 @@
     </p>
     <p>
         4. Trouble relaxing <br>
-            <input id="q1_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q1_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q4_0" type="checkbox" name="0" value="0" />Not at all    
+            <input id="q4_1" type="checkbox" name="1" value="1" />Several days
+            <input id="q4_2" type="checkbox" name="2" value="2" />More than half the days
+            <input id="q4_3" type="checkbox" name="3" value="3" />Nearly every day
     </p>
     <p>
         5. Being so restless that it is hard to sit still <br>
@@ -74,7 +74,20 @@
     </p>
     </form>
 
-    <input type = "button" value = "Submit" onclick="evaluate()"/>
+    <button type="button" id="submitButton" onclick="evaluate()">Submit</button>
+
+    <p id="minimal anxiety feedback" style = "visibility: hidden;">
+        Based on the questionnaire, you have minimal anxiety.
+    </p>
+    <p id="mild anxiety feedback" style = "visibility: hidden;">
+        Based on the questionnaire, you have mild anxiety.
+    </p>
+    <p id="moderate anxiety feedback" style = "visibility: hidden;">
+        Based on the questionnaire, you have moderate anxiety.
+    </p>
+    <p id="severe anxiety feedback" style = "visibility: hidden;">
+        Based on the questionnaire, you have severe anxiety.
+    </p>
 
     <script language="Javascript">
 
@@ -95,22 +108,22 @@
         //gives a result about anxiety level
         function evaluate() {
             var score = calcScore();
-            var result;
+            document.getElementById("minimal anxiety feedback").style.visibility = "visible";
+            
             switch (score) {
-                case score >= 0 || score <=4:
-                    result = "minimal anxiety";
+                case (score >= 0 || score <=4):
+                    document.getElementById("minimal anxiety feedback").style.visibility = "visible";
                     break;
-                case score >= 5 || score <= 9:
-                    result = "moderate anxiety";
+                case (score >= 5 || score <= 9):
+                    document.getElementById("mild anxiety feedback").style.visibility = "visible";
                     break;
-                case score >= 10 || score <= 14:
-                    result = "moderate anxiety";
+                case (score >= 10 || score <= 14):
+                    document.getElementById("moderate anxiety feedback").style.visibility = "visible";
                     break;
-                case score >= 15 || score <= 21:
-                    result = "severe anxiety";
+                case (score >= 15 || score <= 21):
+                    document.getElementById("severe anxiety feedback").style.visibility = "visible";
                     break;
             }
-            return result;
         }
 
     </script>
