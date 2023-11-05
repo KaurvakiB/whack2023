@@ -1,3 +1,7 @@
+<!--Credit:
+  https://www.youtube.com/watch?v=x2hdO15luS0
+  https://www.youtube.com/watch?v=B7blgp2XZic&t=103s
+-->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -9,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Raleway:wght@500&display=swap" rel="stylesheet">
     
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="/script.js" defer></script>
@@ -22,173 +29,144 @@
     
           <nav class = "navbar">
             <a href = "mentalTest.html" class = "navBtn">Questionnaire</a>
-            <a href = "resources.html" class = "navBtn">Resources</a>
+            <a href = "selfCare.html" class = "navBtn">Self Care</a>
             <a href = "helplines.html" class = "navBtn">Helplines</a>
           </nav>
         </header>
-    
-    </body>
-
-
-    <body>
-        <h2>Generalized Anxiety Disorder Screening</h2>
-
-<<<<<<< HEAD
-        <p>
-=======
-<!-- Nav Bar Credit: Kode With Klossy Group Project 2020-->
-
-<body>
-    <div class="logo_title">
-        <a href="index.html"><img src="assets/images/logo.png" alt="smiley face logo" width="50" height="50" />
-        </a>
-    </div>
-
-    <nav class="navbar">
-        <div class="collapse navbar-collapse" id="navbarnav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                <li class="nav-button">
-                    <a class="nav-btn-link" href="mentalTest.html">Questionnaire</a>
-                </li>
-                <li class="nav-button">
-                    <a class="nav-btn-link" href="resources.html">Accessible/Free Resources</a>
-                </li>
-            </ul>
+        <!--ALERT BTN-->
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <b>Disclaimer!</b> <br>
+            College Companion is NOT a medical tool used for official diagnosis, rather it is for students to use as a guide for advice/suggestions. 
+            Reach out to the numbers provided in the "Helpline" section for professional help or call 911 for emergencies!
         </div>
-    </nav>
 
-</body>
-
-<body>
-    <h2>Generalized Anxiety Disorder Screening</h2>
-
-    <p>      
->>>>>>> 120cfbfafa9023452baa1d6ccb4d81f3758137e7
-        Generalized Anxiety Disorder is characterized by persistent, uncontrollable worrying, especially for days on
-        end, recurring over at least 6 months <a
-        href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/generalized-anxiety-disorder#:~:text=GAD%20means%20that%20you%20are,money%2C%20family%2C%20or%20work.">(Johns
-        Hopkins)</a>.<br>
-        College students are experiencing increasingly high levels of reported anxiety, among other mental health struggles, with 37% reporting anxiety in the 2021-2022 school year in the Healthy Minds Survey, as reported by <a href="https://news.umich.edu/college-students-anxiety-depression-higher-than-ever-but-so-are-efforts-to-receive-care/">Michigan News</a>.<br><br>
-        
-        The following questions follow the process for Generalized Anxiety Disorder Screening, based on the Primary Care Evaluation of Mental Disorders Patient Health Questionaire (also known as the PRIME-MD-PHQ, or just PHQ for short).<br>
-        
-        The evaluation is based off of your responses to the following series of questions, calculating a final score. <br>
-        The following detail the points associated with each response: <br>
-        Not at all  =  1<br>
-        Several days = 2<br>
-        More than half the days = 3<br>
-        Nearly every day = 4<br>
-        A scale is used to determine the evaluation based on the sum of all points from each question:<br>
-        0-4: minimal anxiety<br>
-        5-9: mild anxiety<br>
-        10-14: moderate anxiety<br>
-        15-21: severe anxiety<br>
-
-        <br>DISCLAMER: We are not medical professionals and none of the information contained herein constitutes as a form of diagnosis or medical advice. Please seek a licensed medical professional for consultation.
-    </p>
-    <b>Over the last <u>two weeks</u>, how often have you been bothered by the following problems?</b><br>
-    <p>
-        <b>1. Feeling nervous, anxious, or on edge </b><br>
-        <input id="q1_0" type="checkbox" name="0" value="0" />Not at all
-        <input id="q1_1" type="checkbox" name="1" value="1" />Several days
-        <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
-        <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day 
-        <br><br>
-        <b>2. Not being able to stop or control worrying </b><br>
-        <input id="q2_0" type="checkbox" name="4" value="0" />Not at all
-        <input id="q2_1" type="checkbox" name="5" value="1" />Several days
-        <input id="q2_2" type="checkbox" name="6" value="2" />More than half the days
-        <input id="q2_3" type="checkbox" name="7" value="3" />Nearly every day
-        <br><br>
-        <b>3. Worrying too much about different things </b><br>
-        <input id="q3_0" type="checkbox" name="8" value="0" />Not at all
-        <input id="q3_1" type="checkbox" name="9" value="1" />Several days
-        <input id="q3_2" type="checkbox" name="10" value="2" />More than half the days
-        <input id="q3_3" type="checkbox" name="11" value="3" />Nearly every day
-        <br><br>
-        <b>4. Trouble relaxing </b><br>
-        <input id="q4_0" type="checkbox" name="12" value="0" />Not at all
-        <input id="q4_1" type="checkbox" name="13" value="1" />Several days
-        <input id="q4_2" type="checkbox" name="14" value="2" />More than half the days
-        <input id="q4_3" type="checkbox" name="15" value="3" />Nearly every day
-        <br><br>
-        <b>5. Being so restless that it is hard to sit still </b><br>
-        <input id="q5_0" type="checkbox" name="16" value="0" />Not at all
-        <input id="q5_1" type="checkbox" name="17" value="1" />Several days
-        <input id="q5_2" type="checkbox" name="18" value="2" />More than half the days
-        <input id="q5_3" type="checkbox" name="19" value="3" />Nearly every day
-        <br><br>
-        <b>6. Becoming easily annoyed or irritable </b><br>
-        <input id="q6_0" type="checkbox" name="20" value="0" />Not at all
-        <input id="q6_1" type="checkbox" name="21" value="1" />Several days
-        <input id="q6_2" type="checkbox" name="22" value="2" />More than half the days
-        <input id="q6_3" type="checkbox" name="23" value="3" />Nearly every day
-        <br><br>
-        <b>7. Feeling afraid, as if something awful might happen </b><br>
-        <input id="q7_0" type="checkbox" name="24" value="0" />Not at all
-        <input id="q7_1" type="checkbox" name="25" value="1" />Several days
-        <input id="q7_2" type="checkbox" name="26" value="2" />More than half the days
-        <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day
-    </p>
-
-    <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
-
-    <p id="scoreResponse">
-
-    </p>
-    <p id="minimal anxiety feedback" style="visibility: hidden;">
-        Based on the questionnaire, you have minimal anxiety.
-    </p>
-    <p id="mild anxiety feedback" style="visibility: hidden;">
-        Based on the questionnaire, you have mild anxiety.
-    </p>
-    <p id="moderate anxiety feedback" style="visibility: hidden;">
-        Based on the questionnaire, you have moderate anxiety.
-    </p>
-    <p id="severe anxiety feedback" style="visibility: hidden;">
-        Based on the questionnaire, you have severe anxiety.
-    </p>
-
-
-    <script language="Javascript">
-        //gives a result about anxiety level
-        function evaluateAnxiety() {
-            //resets from last time submit was pressed
-            document.getElementById("minimal anxiety feedback").style.visibility = "hidden";
-            document.getElementById("mild anxiety feedback").style.visibility = "hidden";
-            document.getElementById("moderate anxiety feedback").style.visibility = "hidden";
-            document.getElementById("severe anxiety feedback").style.visibility = "hidden";
-
-            var score = 0;
-
-            for (let rep = 0; rep < 28; rep++) {
-                if (document.getElementsByName(rep)[0].checked) {
-                    score += Number(document.getElementsByName(rep)[0].value);
+        <section class = "gad">
+            <h2 class = "gadTitle">Generalized Anxiety Disorder Screening</h2>
+    
+            <p>
+            Generalized Anxiety Disorder is characterized by persistent, uncontrollable worrying, especially for days on
+            end, recurring over at least 6 months <a
+            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/generalized-anxiety-disorder#:~:text=GAD%20means%20that%20you%20are,money%2C%20family%2C%20or%20work.">(Johns
+            Hopkins)</a>.<br>
+            College students are experiencing increasingly high levels of reported anxiety, among other mental health struggles, with 37% reporting anxiety in the 2021-2022 school year in the Healthy Minds Survey, as reported by <a href="https://news.umich.edu/college-students-anxiety-depression-higher-than-ever-but-so-are-efforts-to-receive-care/">Michigan News</a>.<br><br>
+            
+            The following questions follow the process for Generalized Anxiety Disorder Screening, based on the Primary Care Evaluation of Mental Disorders Patient Health Questionaire (also known as the PRIME-MD-PHQ, or just PHQ for short).<br>
+            
+            The evaluation is based off of your responses to the following series of questions, calculating a final score. <br>
+            The following detail the points associated with each response: <br>
+            Not at all  =  1<br>
+            Several days = 2<br>
+            More than half the days = 3<br>
+            Nearly every day = 4<br>
+            A scale is used to determine the evaluation based on the sum of all points from each question:<br>
+            0-4: minimal anxiety<br>
+            5-9: mild anxiety<br>
+            10-14: moderate anxiety<br>
+            15-21: severe anxiety<br>
+    
+            <br>DISCLAMER: We are not medical professionals and none of the information contained herein constitutes as a form of diagnosis or medical advice. Please seek a licensed medical professional for consultation.
+            </p>
+            <b>Over the last <u>two weeks</u>, how often have you been bothered by the following problems?</b><br>
+            <p>
+            <b>1. Feeling nervous, anxious, or on edge </b><br>
+            <input id="q1_0" type="checkbox" name="0" value="0" />Not at all
+            <input id="q1_1" type="checkbox" name="1" value="1" />Several days
+            <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
+            <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day 
+            <br><br>
+            <b>2. Not being able to stop or control worrying </b><br>
+            <input id="q2_0" type="checkbox" name="4" value="0" />Not at all
+            <input id="q2_1" type="checkbox" name="5" value="1" />Several days
+            <input id="q2_2" type="checkbox" name="6" value="2" />More than half the days
+            <input id="q2_3" type="checkbox" name="7" value="3" />Nearly every day
+            <br><br>
+            <b>3. Worrying too much about different things </b><br>
+            <input id="q3_0" type="checkbox" name="8" value="0" />Not at all
+            <input id="q3_1" type="checkbox" name="9" value="1" />Several days
+            <input id="q3_2" type="checkbox" name="10" value="2" />More than half the days
+            <input id="q3_3" type="checkbox" name="11" value="3" />Nearly every day
+            <br><br>
+            <b>4. Trouble relaxing </b><br>
+            <input id="q4_0" type="checkbox" name="12" value="0" />Not at all
+            <input id="q4_1" type="checkbox" name="13" value="1" />Several days
+            <input id="q4_2" type="checkbox" name="14" value="2" />More than half the days
+            <input id="q4_3" type="checkbox" name="15" value="3" />Nearly every day
+            <br><br>
+            <b>5. Being so restless that it is hard to sit still </b><br>
+            <input id="q5_0" type="checkbox" name="16" value="0" />Not at all
+            <input id="q5_1" type="checkbox" name="17" value="1" />Several days
+            <input id="q5_2" type="checkbox" name="18" value="2" />More than half the days
+            <input id="q5_3" type="checkbox" name="19" value="3" />Nearly every day
+            <br><br>
+            <b>6. Becoming easily annoyed or irritable </b><br>
+            <input id="q6_0" type="checkbox" name="20" value="0" />Not at all
+            <input id="q6_1" type="checkbox" name="21" value="1" />Several days
+            <input id="q6_2" type="checkbox" name="22" value="2" />More than half the days
+            <input id="q6_3" type="checkbox" name="23" value="3" />Nearly every day
+            <br><br>
+            <b>7. Feeling afraid, as if something awful might happen </b><br>
+            <input id="q7_0" type="checkbox" name="24" value="0" />Not at all
+            <input id="q7_1" type="checkbox" name="25" value="1" />Several days
+            <input id="q7_2" type="checkbox" name="26" value="2" />More than half the days
+            <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day
+            </p>
+    
+            <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
+    
+            <p id="scoreResponse">
+    
+            </p>
+            <p id="minimal anxiety feedback" style="visibility: hidden;">
+            Based on the questionnaire, you have minimal anxiety.
+            </p>
+            <p id="mild anxiety feedback" style="visibility: hidden;">
+                Based on the questionnaire, you have mild anxiety.
+            </p>
+            <p id="moderate anxiety feedback" style="visibility: hidden;">
+                Based on the questionnaire, you have moderate anxiety.
+            </p>
+            <p id="severe anxiety feedback" style="visibility: hidden;">
+                Based on the questionnaire, you have severe anxiety.
+            </p>
+    
+    
+            <script language="Javascript">
+                //gives a result about anxiety level
+                function evaluateAnxiety() {
+                //resets from last time submit was pressed
+                    document.getElementById("minimal anxiety feedback").style.visibility = "hidden";
+                    document.getElementById("mild anxiety feedback").style.visibility = "hidden";
+                    document.getElementById("moderate anxiety feedback").style.visibility = "hidden";
+                    document.getElementById("severe anxiety feedback").style.visibility = "hidden";
+    
+                    var score = 0;
+    
+                    for (let rep = 0; rep < 28; rep++) {
+                        if (document.getElementsByName(rep)[0].checked) {
+                            score += Number(document.getElementsByName(rep)[0].value);
+                        }
+                    }
+                    document.getElementById("scoreResponse").innerHTML = "Your score is: " + score;
+    
+    
+                    if (score >= 0 && score <= 4) {
+                        document.getElementById("minimal anxiety feedback").style.visibility = "visible";
+                    }
+                    else if (score >= 5 && score <= 9) {
+                        document.getElementById("mild anxiety feedback").style.visibility = "visible";
+                    }
+                    else if (score >= 10 && score <= 14) {
+                        document.getElementById("moderate anxiety feedback").style.visibility = "visible";
+                    }
+                    else if (score >= 15 && score <= 21) {
+                        document.getElementById("severe anxiety feedback").style.visibility = "visible";
+                    }
                 }
-            }
-            document.getElementById("scoreResponse").innerHTML = "Your score is: " + score;
-
-
-            if (score >= 0 && score <= 4) {
-                document.getElementById("minimal anxiety feedback").style.visibility = "visible";
-            }
-            else if (score >= 5 && score <= 9) {
-                document.getElementById("mild anxiety feedback").style.visibility = "visible";
-            }
-            else if (score >= 10 && score <= 14) {
-                document.getElementById("moderate anxiety feedback").style.visibility = "visible";
-            }
-            else if (score >= 15 && score <= 21) {
-                document.getElementById("severe anxiety feedback").style.visibility = "visible";
-            }
-        }
-    </script>
-
-    Based on the <a href="https://adaa.org/sites/default/files/GAD-7_Anxiety-updated_0.pdf">ADAA GAD-7 Anxiety
-        Screening</a> document
-</body>
-
+            </script>
+    
+            <h3>Based on the <a href="https://adaa.org/sites/default/files/GAD-7_Anxiety-updated_0.pdf">ADAA GAD-7 Anxiety Screening</a> document</h3>
+        </section>
+    </body>
+    
 </html>
