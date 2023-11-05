@@ -42,7 +42,7 @@
     </head>
 
 <body style="margin-block-start: 10px;">
-    <h2 style="background-color: rgba(217, 246, 241, 0.9)">Generalized Anxiety Disorder Screening</h2>
+    <h2 style="font-style: oblique;">Generalized Anxiety Disorder Screening</h2>
 
     <p style="background-color: rgba(254, 244, 204, 0.9)">
         Generalized Anxiety Disorder is characterized by persistent, uncontrollable worrying, especially for days on
@@ -60,12 +60,12 @@
         short).<br>
 
         The evaluation is based off of your responses to the following series of questions, calculating a final score.
-        <br>
+        <br><br>
         The following detail the points associated with each response: <br>
-        Not at all = 0<br>
-        Several days = 1<br>
-        More than half the days = 2<br>
-        Nearly every day = 3<br>
+         - Not at all = 0<br>
+         - Several days = 1<br>
+         - More than half the days = 2<br>
+         - Nearly every day = 3<br><br>
         A scale is used to determine the evaluation based on the sum of all points from each question:<br>
         0-4: minimal anxiety<br>
         5-9: mild anxiety<br>
@@ -117,19 +117,19 @@
         <input id="q7_0" type="checkbox" name="24" value="0" />Not at all
         <input id="q7_1" type="checkbox" name="25" value="1" />Several days
         <input id="q7_2" type="checkbox" name="26" value="2" />More than half the days
-        <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day
+        <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day <br> <br>
+        <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
     </p>
 
-    <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
 
-    <p id="scoreResponse" style="background-color: rgba(246, 217, 230, 0.9)"></p>
-    <p id="minimal anxiety feedback" style="visibility: hidden;background-color: rgba(246, 217, 230, 0.9)">
+    <p id="scoreResponse"></p>
+    <p id="minimal anxiety feedback" style="visibility: hidden;background-color: rgba(217, 246, 218, 0.9)">
         Based on the questionnaire, you have minimal anxiety.
     </p>
-    <p id="mild anxiety feedback" style="visibility: hidden;background-color: rgba(246, 217, 230, 0.9)">
+    <p id="mild anxiety feedback" style="visibility: hidden;background-color: rgba(245, 246, 217, 0.9)">
         Based on the questionnaire, you have mild anxiety.
     </p>
-    <p id="moderate anxiety feedback" style="visibility: hidden;background-color: rgba(246, 217, 230, 0.9)">
+    <p id="moderate anxiety feedback" style="visibility: hidden;background-color: rgba(246, 238, 217, 0.9)">
         Based on the questionnaire, you have moderate anxiety.
     </p>
     <p id="severe anxiety feedback" style="visibility: hidden;background-color: rgba(246, 217, 230, 0.9)">
