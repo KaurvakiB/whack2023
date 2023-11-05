@@ -88,10 +88,9 @@
     </p>
 
     <script language="Javascript">
-        
         //gives a result about anxiety level
         function evaluateAnxiety() {
-            var score = 0;
+            var score = 14;
     
             /*
             for (let qNum = 1; qNum <= 7; qNum++) {
@@ -107,7 +106,7 @@
                 if (document.getElementsByName(rep)[0].checked) {
                     score += document.getElementsByName(rep)[0].value;
                 }
-            }/*
+            }*/
             
             /*
             switch (score) {
@@ -137,9 +136,6 @@
             else if (score >= 15 || score <= 21) {
                 document.getElementById("severe anxiety feedback").style.visibility = "visible";
             }
-            //if (score == 0) {
-            //document.getElementById("minimal anxiety feedback").style.visibility = "visible";
-            //}
 
         }
     </script>
