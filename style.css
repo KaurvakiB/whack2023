@@ -77,6 +77,16 @@ nav a:hover {
 
 }
 
+.info {
+  background-color: forestgreen;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  word-spacing: 0.5;
+}
+
 /*questionnaire page*/
 .gadTitle {
     font-family: "Raleway", sans-serif;
