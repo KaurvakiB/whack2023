@@ -139,4 +139,12 @@ nav a:hover {
     transform: rotateY(180deg);
   }
 
+  .helplineBox {
+    width: 200px;
+    height: 300px;
+    border: 2px white;
+    background-color: pink;
+    padding: 15px;
+  }
+
   
