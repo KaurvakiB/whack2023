@@ -20,7 +20,6 @@
 
     INSERT DESCRIPTION OF WHAT A GAD SCREENING IS
 
-    <form>
         Over the last two weeks, how often have you been bothered by the following problems?<br>
     <p>
         1. Feeling nervous, anxious, or on edge <br>
@@ -31,50 +30,52 @@
     </p>
     <p>
         2. Not being able to stop or control worrying <br>
-            <input id="q2_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q2_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q2_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q2_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q2_0" type="checkbox" name="4" value="0" />Not at all    
+            <input id="q2_1" type="checkbox" name="5" value="1" />Several days
+            <input id="q2_2" type="checkbox" name="6" value="2" />More than half the days
+            <input id="q2_3" type="checkbox" name="7" value="3" />Nearly every day
     </p>
     <p>
         3. Worrying too much about different things <br>
-            <input id="q3_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q3_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q3_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q3_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q3_0" type="checkbox" name="8" value="0" />Not at all    
+            <input id="q3_1" type="checkbox" name="9" value="1" />Several days
+            <input id="q3_2" type="checkbox" name="10" value="2" />More than half the days
+            <input id="q3_3" type="checkbox" name="11" value="3" />Nearly every day
     </p>
     <p>
         4. Trouble relaxing <br>
-            <input id="q4_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q4_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q4_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q4_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q4_0" type="checkbox" name="12" value="0" />Not at all    
+            <input id="q4_1" type="checkbox" name="13" value="1" />Several days
+            <input id="q4_2" type="checkbox" name="14" value="2" />More than half the days
+            <input id="q4_3" type="checkbox" name="15" value="3" />Nearly every day
     </p>
     <p>
         5. Being so restless that it is hard to sit still <br>
-            <input id="q1_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q1_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q5_0" type="checkbox" name="16" value="0" />Not at all    
+            <input id="q5_1" type="checkbox" name="17" value="1" />Several days
+            <input id="q5_2" type="checkbox" name="18" value="2" />More than half the days
+            <input id="q5_3" type="checkbox" name="19" value="3" />Nearly every day
     </p>
     <p>
         6. Becoming easily annoyed or irritable <br>
-            <input id="q1_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q1_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q6_0" type="checkbox" name="20" value="0" />Not at all    
+            <input id="q6_1" type="checkbox" name="21" value="1" />Several days
+            <input id="q6_2" type="checkbox" name="22" value="2" />More than half the days
+            <input id="q6_3" type="checkbox" name="23" value="3" />Nearly every day
     </p>
     <p>
         7. Feeling afraid, as if something awful might happen <br>
-            <input id="q1_0" type="checkbox" name="0" value="0" />Not at all    
-            <input id="q1_1" type="checkbox" name="1" value="1" />Several days
-            <input id="q1_2" type="checkbox" name="2" value="2" />More than half the days
-            <input id="q1_3" type="checkbox" name="3" value="3" />Nearly every day
+            <input id="q7_0" type="checkbox" name="24" value="0" />Not at all    
+            <input id="q7_1" type="checkbox" name="25" value="1" />Several days
+            <input id="q7_2" type="checkbox" name="26" value="2" />More than half the days
+            <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day
     </p>
-    </form>
 
-    <button type="button" id="submitButton" onclick="evaluate()">Submit</button>
-
+    <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
+    
+    <p id="scoreResponse">
+        
+    </p>
     <p id="minimal anxiety feedback" style = "visibility: hidden;">
         Based on the questionnaire, you have minimal anxiety.
     </p>
@@ -88,43 +89,40 @@
         Based on the questionnaire, you have severe anxiety.
     </p>
 
-    <script language="Javascript">
 
-        //calculates the user's score based on their checkboxes
-        function calcScore() {
-            var score = 0;
-    
-            for (let qNum = 0; qNum < 7; qNum++) {
-                for (let rep = 0; rep < 4; rep ++) {
-                    if (document.getElementbyId("q" + qNum + "_" + rep).checked) {
-                        score += document.getElementById("q" + qNum + "_" + rep).value;
-                    }
+    <script language="Javascript">
+        //gives a result about anxiety level
+        function evaluateAnxiety() {
+            //resets from last time submit was pressed
+            document.getElementById("minimal anxiety feedback").style.visibility = "hidden";
+            document.getElementById("mild anxiety feedback").style.visibility = "hidden";
+            document.getElementById("moderate anxiety feedback").style.visibility = "hidden";
+            document.getElementById("severe anxiety feedback").style.visibility = "hidden";
+
+            var score = 0;            
+            
+            for (let rep = 0; rep < 28; rep ++) {
+                if (document.getElementsByName(rep)[0].checked) {
+                    score += Number(document.getElementsByName(rep)[0].value);
                 }
             }
-            return score;
-        }
-
-        //gives a result about anxiety level
-        function evaluate() {
-           var score = calcScore();
-            document.getElementById("minimal anxiety feedback").style.visibility = "visible";
+            document.getElementById("scoreResponse").innerHTML = "Your score is: " + score;
             
-            switch (score) {
-                case (score >= 0 || score <=4):
-                    document.getElementById("minimal anxiety feedback").style.visibility = "visible";
-                    break;
-                case (score >= 5 || score <= 9):
-                    document.getElementById("mild anxiety feedback").style.visibility = "visible";
-                    break;
-                case (score >= 10 || score <= 14):
-                    document.getElementById("moderate anxiety feedback").style.visibility = "visible";
-                    break;
-                case (score >= 15 || score <= 21):
-                    document.getElementById("severe anxiety feedback").style.visibility = "visible";
-                    break;
+            
+            if (score >= 0 && score <= 4) {
+                document.getElementById("minimal anxiety feedback").style.visibility = "visible";
             }
-        }
+            else if (score >= 5 && score <= 9) {
+                document.getElementById("mild anxiety feedback").style.visibility = "visible";
+            }
+            else if (score >= 10 && score <= 14) {
+                document.getElementById("moderate anxiety feedback").style.visibility = "visible";
+            }
+            else if (score >= 15 && score <= 21) {
+                document.getElementById("severe anxiety feedback").style.visibility = "visible";
+            }
 
+        }
     </script>
 
     Based on the <a href="https://adaa.org/sites/default/files/GAD-7_Anxiety-updated_0.pdf">ADAA GAD-7 Anxiety Screening</a> document
