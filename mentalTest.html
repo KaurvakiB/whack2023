@@ -100,17 +100,7 @@
             document.getElementById("moderate anxiety feedback").style.visibility = "hidden";
             document.getElementById("severe anxiety feedback").style.visibility = "hidden";
 
-            var score = 0;
-    
-            /*
-            for (let qNum = 1; qNum <= 7; qNum++) {
-                for (let rep = 0; rep < 4; rep ++) {
-                    if (document.getElementbyId("q" + qNum + "_" + rep).checked == true) {
-                        score += document.getElementById("q" + qNum + "_" + rep).value;
-                    }
-                }
-            }*/
-            
+            var score = 0;            
             
             for (let rep = 0; rep < 28; rep ++) {
                 if (document.getElementsByName(rep)[0].checked) {
