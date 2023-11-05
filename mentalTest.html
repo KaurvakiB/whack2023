@@ -63,7 +63,7 @@
         <br>DISCLAMER: We are not medical professionals and none of the information contained herein constitutes as a form of diagnosis or medical advice. Please seek a licensed medical professional for consultation.
     </p>
     <b>Over the last <u>two weeks</u>, how often have you been bothered by the following problems?</b><br>
-    <p>
+    <p style="background-color: rgba(204, 254, 250, 0.9);">
         <b>1. Feeling nervous, anxious, or on edge </b><br>
         <input id="q1_0" type="checkbox" name="0" value="0" />Not at all
         <input id="q1_1" type="checkbox" name="1" value="1" />Several days
@@ -104,24 +104,24 @@
         <input id="q7_0" type="checkbox" name="24" value="0" />Not at all
         <input id="q7_1" type="checkbox" name="25" value="1" />Several days
         <input id="q7_2" type="checkbox" name="26" value="2" />More than half the days
-        <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day
+        <input id="q7_3" type="checkbox" name="27" value="3" />Nearly every day<br><br>
+        <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
     </p>
-
-    <button type="button" id="submitButton" onclick="evaluateAnxiety()">Submit</button>
-
+    
+    
     <p id="scoreResponse">
 
     </p>
-    <p id="minimal anxiety feedback" style="visibility: hidden;">
+    <p id="minimal anxiety feedback" style="visibility: hidden; background-color: rgba(204, 254, 209, 0.9);">
         Based on the questionnaire, you have minimal anxiety.
     </p>
-    <p id="mild anxiety feedback" style="visibility: hidden;">
+    <p id="mild anxiety feedback" style="visibility: hidden; background-color:rgba(253, 254, 204, 0.9);">
         Based on the questionnaire, you have mild anxiety.
     </p>
-    <p id="moderate anxiety feedback" style="visibility: hidden;">
+    <p id="moderate anxiety feedback" style="visibility: hidden; background-color:rgba(254, 231, 204, 0.9);">
         Based on the questionnaire, you have moderate anxiety.
     </p>
-    <p id="severe anxiety feedback" style="visibility: hidden;">
+    <p id="severe anxiety feedback" style="visibility: hidden; background-color: rgba(254, 206, 204, 0.9);">
         Based on the questionnaire, you have severe anxiety.
     </p>
 
